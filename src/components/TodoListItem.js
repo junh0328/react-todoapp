@@ -7,11 +7,11 @@ import {
 import cn from "classnames";
 import "./TodoListItem.scss";
 
-const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
+const TodoListItem = ({ todo, onRemove, onToggle, style }) => {     // style 추가
   const { id, text, checked } = todo;
 
-  return (
-    <div className="TodoListItem-virtualized" style={style}>
+  return (                                                          // div className = "TodoListItem-virtualized"를 새로운 div로 감쌈
+    <div className="TodoListItem-virtualized" style={style}>       
       <div className="TodoListItem">
         <div
           className={cn("checkbox", { checked })}
