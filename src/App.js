@@ -38,7 +38,7 @@ const App = () => {
   // 고윳값으로 사용될 id
   // ref를 사용하여 변수 담기
 
-  const nextId = useRef(101);
+  const nextId = useRef(26);
 
   const onInsert = useCallback(
     (text) => {
